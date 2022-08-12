@@ -11,6 +11,7 @@ interface Props {
 }
 
 export default function Home({posts}: Props) {
+
     console.log(posts);
     return (
         <div className="max-w-7xl mx-auto">
@@ -27,6 +28,11 @@ export default function Home({posts}: Props) {
                         className='underline decoration-black decoration-4'>Medium </span> is a place to write, read,
                         and connect</h1>
                     <h2>It's easy and free to post your thinking on any topic and connect with millions of readers.</h2>
+                    <a href="mailto:dontrellknight@gmail.com">
+                        Email me
+                    </a>
+
+                    <button onClick={() => window.location.href = 'mailto:dontrellknight@gmail.com'}>Contact Me</button>
                 </div>
 
                 <img className='hidden md:inline-flex h-32 lg:h-full'
